@@ -2,6 +2,8 @@ var video = document.getElementById("player1");
 
 window.addEventListener("load", function () {
   console.log("Good job opening the window");
+  console.log("Auto Play is set to False");
+  console.log("Loop is set to False");
   video.autopaly = false;
   video.loop = false;
 });
@@ -23,7 +25,7 @@ document.querySelector("#slower").addEventListener("click", function () {
   console.log("Slow Down Video");
   //   console.log(video.playbackRate);
   video.playbackRate *= 0.9;
-  console.log(video.playbackRate);
+  console.log("Speed is " + video.playbackRate);
 });
 
 // speed up video
@@ -31,7 +33,7 @@ document.querySelector("#faster").addEventListener("click", function () {
   console.log("Speed Up Video");
   //   console.log(video.playbackRate);
   video.playbackRate /= 0.9;
-  console.log(ideo.playbackRate);
+  console.log("Speed is " + video.playbackRate);
 });
 
 // skip ahead video
